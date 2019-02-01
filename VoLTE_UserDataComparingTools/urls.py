@@ -16,9 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from helloword.views import index
+from MainWeb.views import uploadfile
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',index),
     path('index.html',index),
+    path('uploadfile.html',uploadfile),
 ]
