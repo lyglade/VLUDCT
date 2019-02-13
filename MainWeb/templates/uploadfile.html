@@ -1,5 +1,6 @@
 <form method="post" action="" enctype="multipart/form-data" >
-<input type="file" name="personico" /><br /><br />
+{% csrf_token %}
+<input type="file" name="datafiles" /><br /><br />
 <input type="submit" value="submit"/>
 </form>
-<img src="/static/jpg/{{personico}}" width="100px" height="100px" alt="head" />
+<img src="/static/jpg/{{datafiles}}" width="100px" height="100px" alt="head" />
