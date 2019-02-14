@@ -16,7 +16,7 @@ def uploadfile(request):
         for chrunk in f.chunks():
             fobj.write(chrunk);
         fobj.close();
-        return render_to_response('uploadfile.html',{'personico':f.name});
+        return render_to_response('uploadfile.html',{'datafiles':f.name});
             
     else:
         return render_to_response('uploadfile.html');
